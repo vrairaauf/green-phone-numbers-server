@@ -9,12 +9,11 @@
 		<version>2.7.3</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bezkoder</groupId>
-	<artifactId>spring-boot-security-jwt-mongodb</artifactId>
+	<groupId>com.raauf</groupId>
+	<artifactId>green-phone-numbers-tunisia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-security-jwt-mongodb</name>
-	<description>Demo project for Spring Boot Auth with Spring Security,
-		JWT, MongoDB</description>
+	<name>green-phone-numbers-tunisia</name>
+	<description>green phone numbers tunisia server is backend for android application to store information about business</description>
 
 	<properties>
 		<java.version>1.8</java.version>
