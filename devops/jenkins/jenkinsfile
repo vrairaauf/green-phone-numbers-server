@@ -13,7 +13,7 @@ pipeline {
         stage('deploy') {
          	agent any
          	steps {
-	             echo "deploy success"
+	             bat "echo 'deploy success' "
 	         }  
         }
     }
