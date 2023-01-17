@@ -7,7 +7,7 @@ pipeline {
            steps {
                  //git 'https://github.com/vrairaauf/green-phone-numbers-server.git'
                 
-                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                 bat "mvn -Dmaven.test.failure.ignore=true install"
                  bat "echo 'build stage'"
             }
         }
