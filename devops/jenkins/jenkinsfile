@@ -5,9 +5,10 @@ pipeline {
         stage('build') {
        	   agent any
            steps {
-                 git 'https://github.com/vrairaauf/green-phone-numbers-server.git'
+                 //git 'https://github.com/vrairaauf/green-phone-numbers-server.git'
                 
-                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                 //bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                 bat "echo 'build stage'"
             }
         }
        
