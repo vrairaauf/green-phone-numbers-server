@@ -1,0 +1,17 @@
+pipeline {
+    agent any;
+    stages {
+        stage('build') {
+           steps {
+               mvn install
+               echo "build success"
+           }
+        }
+        stage('deploy') {
+         	agent any
+         	steps {
+	             echo "deploy success"
+	         }  
+        }
+    }
+}

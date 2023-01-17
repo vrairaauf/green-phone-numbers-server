@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "547f77ae-30b1-4758-8929-ebd21778ca14",
+		"name": "green phone number API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "notification",
+			"item": [
+				{
+					"name": "create notification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"libelle\":\"update the application\",\r\n    \"content\":\"lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumvvvlorem ipsumlorem ipsumvvlorem ipsumlorem ipsumv\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}{{NOTIFICATION}}new/",
+							"host": [
+								"{{URL}}{{NOTIFICATION}}new"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all notification",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}{{NOTIFICATION}}all/",
+							"host": [
+								"{{URL}}{{NOTIFICATION}}all"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "business",
+			"item": [
+				{
+					"name": "all business",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}{{BUSINESS}}all/",
+							"host": [
+								"{{URL}}{{BUSINESS}}all"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add business",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer_name\":\"raauf abidi\",\r\n    \"category\":\"transport:taxi\",\r\n    \"business_description\":\"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum\",\r\n    \"phone\":\"+21695190089\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}{{BUSINESS}}new/",
+							"host": [
+								"{{URL}}{{BUSINESS}}new"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrieve business",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}{{BUSINESS}}retrieve/transport/",
+							"host": [
+								"{{URL}}{{BUSINESS}}retrieve"
+							],
+							"path": [
+								"transport",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
