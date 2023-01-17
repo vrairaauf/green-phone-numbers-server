@@ -1,11 +1,16 @@
 pipeline {
-    agent any;
+    agent any
+    tools {
+        maven "M3"
+    }
     stages {
         stage('build') {
+       	   agent any
            steps {
-               bat mvn install
-               echo "build success"
-           }
+                git 'https://github.com/vrairaauf/green-phone-numbers-server.git'
+                
+                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
         }
         stage('deploy') {
          	agent any
